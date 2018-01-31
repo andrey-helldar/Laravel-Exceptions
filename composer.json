@@ -13,17 +13,17 @@
         "php": "^7.0",
         "illuminate/contracts": "5.3.*|5.4.*|5.5.*",
         "illuminate/support": "5.3.*|5.4.*|5.5.*",
-        "symfony/console": "^3.1",
-        "symfony/debug": "^3.1",
-        "symfony/http-foundation": "^3.1",
+        "symfony/console": "^3.1|^4.0",
+        "symfony/debug": "^3.1|^4.0",
+        "symfony/http-foundation": "^3.1|^4.0",
         "psr/log": "^1.0"
     },
     "require-dev": {
         "filp/whoops": "^1.1|^2.0",
-        "graham-campbell/analyzer": "^1.1",
-        "graham-campbell/testbench": "^4.0",
-        "mockery/mockery": "dev-master#c90a17247147543081e4d00f46911e422b49e583",
-        "phpunit/phpunit": "^6.0"
+        "graham-campbell/analyzer": "^2.0",
+        "graham-campbell/testbench": "^4.0|^5.0",
+        "mockery/mockery": "^1.0",
+        "phpunit/phpunit": "^6.5"
     },
     "suggest": {
         "filp/whoops": "Enables use of the debug displayer."
@@ -44,7 +44,12 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "10.0-dev"
+            "dev-master": "10.1-dev"
+        },
+        "laravel": {
+            "providers": [
+                "GrahamCampbell\\Exceptions\\ExceptionsServiceProvider"
+            ]
         }
     },
     "minimum-stability": "dev",
